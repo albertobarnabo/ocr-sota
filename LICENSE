@@ -1,0 +1,15 @@
+CC0 1.0 Universal
+
+The curated metadata in this repository (the list of OCR methods, descriptions,
+categories and accompanying scripts) is dedicated to the public domain under the
+Creative Commons CC0 1.0 Universal Public Domain Dedication.
+
+To the extent possible under law, the contributors to OCR-SOTA have waived all
+copyright and related or neighboring rights to this curated list.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+NOTE: Each OCR project listed in this repository is the property of its
+respective authors and is distributed under its own license, shown in the
+tables in README.md. CC0 applies only to this list and its tooling, not to the
+linked projects.

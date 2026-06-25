@@ -1,0 +1,109 @@
+# ──────────────────────────────────────────────────────────────────────────
+# OCR-SOTA — single source of truth for every tracked OCR method.
+#
+# This file is the ONLY thing you edit to add a method. Stars, activity and
+# license are fetched live from GitHub by scripts/update_readme.py, which
+# regenerates the tables in README.md. Do not hand-edit the README tables.
+#
+# Schema (per list item):
+#   name         (required)  Display name.
+#   repo         (required)  GitHub "owner/name". Drives stars + activity.
+#   category     (required)  One of the buckets in scripts/update_readme.py
+#                            (CATEGORY_ORDER) — or add a new one there.
+#   description  (required)  One line, < ~120 chars, no trailing period needed.
+#   languages    (optional)  e.g. "100+", "English", "80+".
+#   homepage     (optional)  Docs/site link; defaults to the GitHub repo.
+#   paper        (optional)  arXiv / paper link → shown as a 📄 icon.
+#   license      (optional)  Auto-filled from GitHub if omitted.
+#
+# Keep the list roughly alphabetical within reason — sorting is automatic.
+# ──────────────────────────────────────────────────────────────────────────
+
+# ── Engines & Toolkits ────────────────────────────────────────────────────
+- name: PaddleOCR
+  repo: PaddlePaddle/PaddleOCR
+  category: "🏗️ Engines & Toolkits"
+  languages: "100+"
+  homepage: https://paddlepaddle.github.io/PaddleOCR/
+  description: Lightweight multilingual toolkit; strong CJK, tables and layout; the most-starred OCR repo
+
+- name: Tesseract
+  repo: tesseract-ocr/tesseract
+  category: "🏗️ Engines & Toolkits"
+  languages: "100+"
+  homepage: https://tesseract-ocr.github.io/
+  description: The classic LSTM engine — battle-tested, runs offline in ~10MB, ideal for edge and embedded
+
+- name: EasyOCR
+  repo: JaidedAI/EasyOCR
+  category: "🏗️ Engines & Toolkits"
+  languages: "80+"
+  description: Ready-to-use PyTorch OCR with a one-line API and 80+ languages out of the box
+
+- name: docTR
+  repo: mindee/doctr
+  category: "🏗️ Engines & Toolkits"
+  languages: "English, French, +"
+  description: End-to-end document text detection + recognition on TensorFlow/PyTorch by Mindee
+
+- name: MMOCR
+  repo: open-mmlab/mmocr
+  category: "🏗️ Engines & Toolkits"
+  languages: "Multi"
+  description: OpenMMLab research toolbox — detection, recognition and KIE with many SOTA model implementations
+
+# ── Document & Layout Parsers ─────────────────────────────────────────────
+- name: Marker
+  repo: datalab-to/marker
+  category: "📄 Document & Layout Parsers"
+  languages: "Multi"
+  description: Converts PDFs, docs and slides to clean Markdown/JSON with tables, equations and code blocks
+
+- name: Surya
+  repo: datalab-to/surya
+  category: "📄 Document & Layout Parsers"
+  languages: "90+"
+  description: Document OCR, layout analysis, reading-order and table recognition across 90+ languages
+
+- name: OCRmyPDF
+  repo: ocrmypdf/OCRmyPDF
+  category: "📄 Document & Layout Parsers"
+  languages: "100+"
+  description: Adds a searchable text layer to scanned PDFs (Tesseract under the hood) without touching the image
+
+- name: Donut
+  repo: clovaai/donut
+  category: "📄 Document & Layout Parsers"
+  languages: "Multi"
+  paper: https://arxiv.org/abs/2111.15664
+  description: OCR-free document understanding transformer — reads documents end-to-end without a text detector
+
+# ── VLM / LLM-based OCR ───────────────────────────────────────────────────
+- name: olmOCR
+  repo: allenai/olmocr
+  category: "🧠 VLM / LLM-based OCR"
+  languages: "Multi"
+  homepage: https://olmocr.allenai.org/
+  description: AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model
+
+- name: GOT-OCR2.0
+  repo: Ucas-HaoranWei/GOT-OCR2.0
+  category: "🧠 VLM / LLM-based OCR"
+  languages: "Multi"
+  paper: https://arxiv.org/abs/2409.01704
+  description: Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts
+
+- name: TrOCR (unilm)
+  repo: microsoft/unilm
+  category: "🧠 VLM / LLM-based OCR"
+  languages: "English, +"
+  paper: https://arxiv.org/abs/2109.10282
+  homepage: https://github.com/microsoft/unilm/tree/master/trocr
+  description: Microsoft transformer-based OCR (lives in the unilm repo); strong printed + handwritten recognition
+
+# ── Math & Formula ────────────────────────────────────────────────────────
+- name: Pix2Text
+  repo: breezedeus/Pix2Text
+  category: "🔢 Math & Formula"
+  languages: "80+"
+  description: Free Mathpix alternative — recognizes math formulas, tables and mixed text into LaTeX/Markdown
