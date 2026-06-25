@@ -1,140 +1,140 @@
-# ──────────────────────────────────────────────────────────────────────────
-# OCR-SOTA — single source of truth for every tracked OCR method.
+# ---------------------------------------------------------------------------
+# OCR-SOTA: single source of truth for every tracked OCR method.
 #
-# This file is the ONLY thing you edit to add a method. Stars, activity and
-# license are fetched live from GitHub by scripts/update_readme.py, which
-# regenerates the tables in README.md. Do not hand-edit the README tables.
+# This file is the only thing you edit to add a method. Star counts, last-commit
+# dates, and license are fetched from the GitHub API by scripts/update_readme.py,
+# which regenerates the tables in README.md. Do not hand-edit the README tables.
 #
 # Schema (per list item):
 #   name         (required)  Display name.
-#   repo         (required)  GitHub "owner/name". Drives stars + activity.
+#   repo         (required)  GitHub "owner/name". Drives stars and last commit.
 #   category     (required)  One of the buckets in scripts/update_readme.py
-#                            (CATEGORY_ORDER) — or add a new one there.
-#   description  (required)  One line, < ~120 chars, no trailing period needed.
-#   languages    (optional)  e.g. "100+", "English", "80+".
-#   homepage     (optional)  Docs/site link; defaults to the GitHub repo.
-#   paper        (optional)  arXiv / paper link → shown as a 📄 icon.
+#                            (CATEGORY_ORDER), or add a new one there.
+#   description  (required)  One factual sentence, roughly 120 characters or less.
+#   languages    (optional)  e.g. "100+", "English", "Multi".
+#   homepage     (optional)  Docs or project site; defaults to the GitHub repo.
+#   paper        (optional)  arXiv or paper link; rendered as a "(paper)" link.
 #   license      (optional)  Auto-filled from GitHub if omitted.
 #
-# Keep the list roughly alphabetical within reason — sorting is automatic.
-# ──────────────────────────────────────────────────────────────────────────
+# Keep the list roughly alphabetical within each section; sorting is automatic.
+# ---------------------------------------------------------------------------
 
-# ── Engines & Toolkits ────────────────────────────────────────────────────
+# --- Engines & toolkits ----------------------------------------------------
 - name: PaddleOCR
   repo: PaddlePaddle/PaddleOCR
-  category: "🏗️ Engines & Toolkits"
+  category: "Engines & toolkits"
   languages: "100+"
   homepage: https://paddlepaddle.github.io/PaddleOCR/
-  description: Lightweight multilingual toolkit; strong CJK, tables and layout; the most-starred OCR repo
+  description: Lightweight multilingual OCR toolkit with strong CJK, table, and layout support.
 
 - name: Tesseract
   repo: tesseract-ocr/tesseract
-  category: "🏗️ Engines & Toolkits"
+  category: "Engines & toolkits"
   languages: "100+"
   homepage: https://tesseract-ocr.github.io/
-  description: The classic LSTM engine — battle-tested, runs offline in ~10MB, ideal for edge and embedded
+  description: Classic LSTM-based engine that runs fully offline in about 10 MB; well suited to edge use.
 
 - name: EasyOCR
   repo: JaidedAI/EasyOCR
-  category: "🏗️ Engines & Toolkits"
+  category: "Engines & toolkits"
   languages: "80+"
-  description: Ready-to-use PyTorch OCR with a one-line API and 80+ languages out of the box
+  description: Ready-to-use PyTorch OCR with a simple API and 80+ languages out of the box.
 
 - name: docTR
   repo: mindee/doctr
-  category: "🏗️ Engines & Toolkits"
-  languages: "English, French, +"
-  description: End-to-end document text detection + recognition on TensorFlow/PyTorch by Mindee
+  category: "Engines & toolkits"
+  languages: "Multi"
+  description: End-to-end text detection and recognition for documents, on TensorFlow and PyTorch. By Mindee.
 
 - name: MMOCR
   repo: open-mmlab/mmocr
-  category: "🏗️ Engines & Toolkits"
+  category: "Engines & toolkits"
   languages: "Multi"
-  description: OpenMMLab research toolbox — detection, recognition and KIE with many SOTA model implementations
+  description: OpenMMLab research toolbox for text detection, recognition, and key information extraction.
 
-# ── Document & Layout Parsers ─────────────────────────────────────────────
+# --- Document & layout parsers ---------------------------------------------
 - name: Marker
   repo: datalab-to/marker
-  category: "📄 Document & Layout Parsers"
+  category: "Document & layout parsers"
   languages: "Multi"
-  description: Converts PDFs, docs and slides to clean Markdown/JSON with tables, equations and code blocks
+  description: Converts PDFs, documents, and slides to clean Markdown or JSON, including tables and equations.
 
 - name: Surya
   repo: datalab-to/surya
-  category: "📄 Document & Layout Parsers"
+  category: "Document & layout parsers"
   languages: "90+"
-  description: Document OCR, layout analysis, reading-order and table recognition across 90+ languages
+  description: Document OCR with layout analysis, reading-order detection, and table recognition in 90+ languages.
 
 - name: OCRmyPDF
   repo: ocrmypdf/OCRmyPDF
-  category: "📄 Document & Layout Parsers"
+  category: "Document & layout parsers"
   languages: "100+"
-  description: Adds a searchable text layer to scanned PDFs (Tesseract under the hood) without touching the image
+  description: Adds a searchable text layer to scanned PDFs using Tesseract, leaving the original image intact.
 
 - name: Docling
   repo: docling-project/docling
-  category: "📄 Document & Layout Parsers"
+  category: "Document & layout parsers"
   languages: "Multi"
-  description: Parses PDFs, Office and HTML into structured Markdown/JSON with layout, tables and OCR for gen-AI pipelines
+  description: Parses PDFs, Office, and HTML into structured Markdown or JSON with layout, table, and OCR support.
 
 - name: Donut
   repo: clovaai/donut
-  category: "📄 Document & Layout Parsers"
+  category: "Document & layout parsers"
   languages: "Multi"
   paper: https://arxiv.org/abs/2111.15664
-  description: OCR-free document understanding transformer — reads documents end-to-end without a text detector
+  description: OCR-free document understanding transformer that reads documents end-to-end with no text detector.
 
-# ── VLM / LLM-based OCR ───────────────────────────────────────────────────
+# --- Vision-language OCR ----------------------------------------------------
 - name: olmOCR
   repo: allenai/olmocr
-  category: "🧠 VLM / LLM-based OCR"
+  category: "Vision-language OCR"
   languages: "Multi"
   homepage: https://olmocr.allenai.org/
-  description: AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model
+  description: AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model.
 
 - name: GOT-OCR2.0
   repo: Ucas-HaoranWei/GOT-OCR2.0
-  category: "🧠 VLM / LLM-based OCR"
+  category: "Vision-language OCR"
   languages: "Multi"
   paper: https://arxiv.org/abs/2409.01704
-  description: Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts
+  description: Unified end-to-end model that reads text, tables, formulas, sheet music, and charts.
 
 - name: TrOCR (unilm)
   repo: microsoft/unilm
-  category: "🧠 VLM / LLM-based OCR"
-  languages: "English, +"
+  category: "Vision-language OCR"
+  languages: "English"
   paper: https://arxiv.org/abs/2109.10282
   homepage: https://github.com/microsoft/unilm/tree/master/trocr
-  description: Microsoft transformer-based OCR (lives in the unilm repo); strong printed + handwritten recognition
+  description: Microsoft transformer-based OCR, part of the unilm repo; strong on printed and handwritten text.
 
 - name: Unlimited-OCR
   repo: baidu/Unlimited-OCR
-  category: "🧠 VLM / LLM-based OCR"
+  category: "Vision-language OCR"
   languages: "Multi"
-  description: Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass
+  description: Baidu model for long-horizon parsing that reads very long documents in a single pass.
 
 - name: dots.ocr
   repo: rednote-hilab/dots.ocr
-  category: "🧠 VLM / LLM-based OCR"
+  category: "Vision-language OCR"
   languages: "Multi"
-  description: Multilingual document layout parsing (text, tables, formulas, reading order) in a single vision-language model
+  description: Multilingual document layout parsing (text, tables, formulas, reading order) in one vision-language model.
 
 - name: GLM-OCR
   repo: zai-org/GLM-OCR
-  category: "🧠 VLM / LLM-based OCR"
+  category: "Vision-language OCR"
   languages: "Multi"
-  description: Zhipu AI's GLM vision-language OCR model for document parsing — text, tables and formulas
+  description: Zhipu AI's GLM vision-language model for document parsing, including text, tables, and formulas.
 
-# ── Math & Formula ────────────────────────────────────────────────────────
+# --- Math & formula ---------------------------------------------------------
 - name: Pix2Text
   repo: breezedeus/Pix2Text
-  category: "🔢 Math & Formula"
+  category: "Math & formula"
   languages: "80+"
-  description: Free Mathpix alternative — recognizes math formulas, tables and mixed text into LaTeX/Markdown
+  description: Open-source Mathpix alternative that recognizes math, tables, and mixed text into LaTeX or Markdown.
 
-# ── Wrappers & Pipelines ──────────────────────────────────────────────────
+# --- Wrappers & pipelines ---------------------------------------------------
 - name: MarkItDown
   repo: microsoft/markitdown
-  category: "🧩 Wrappers & Pipelines"
+  category: "Wrappers & pipelines"
   languages: "Multi"
-  description: Microsoft tool that converts Office docs, PDFs and images to LLM-ready Markdown (OCR for images)
+  description: Microsoft tool that converts Office documents, PDFs, and images to LLM-ready Markdown, with OCR for images.

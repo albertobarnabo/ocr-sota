@@ -45,11 +45,11 @@ END = "<!-- METHODS:END -->"
 
 # Display order for categories. Anything not listed is appended alphabetically.
 CATEGORY_ORDER = [
-    "🏗️ Engines & Toolkits",
-    "📄 Document & Layout Parsers",
-    "🧠 VLM / LLM-based OCR",
-    "🔢 Math & Formula",
-    "🧩 Wrappers & Pipelines",
+    "Engines & toolkits",
+    "Document & layout parsers",
+    "Vision-language OCR",
+    "Math & formula",
+    "Wrappers & pipelines",
 ]
 
 
@@ -70,17 +70,9 @@ def gh_get(repo: str) -> dict:
         return json.load(resp)
 
 
-def activity_badge(pushed_at: str) -> str:
-    """🟢/🟡/🔴 freshness badge based on the last push date."""
-    if not pushed_at:
-        return "❔"
-    last = dt.datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
-    days = (dt.datetime.now(dt.timezone.utc) - last).days
-    if days <= 90:
-        return f"🟢 {days}d"
-    if days <= 365:
-        return f"🟡 {days}d"
-    return f"🔴 {days}d"
+def last_commit(pushed_at: str) -> str:
+    """ISO date (YYYY-MM-DD) of the last push, or an em dash if unknown."""
+    return pushed_at[:10] if pushed_at else "—"
 
 
 def enrich(entry: dict) -> dict:
@@ -106,7 +98,8 @@ def enrich(entry: dict) -> dict:
 
 
 def fmt_stars(n: int) -> str:
-    return f"{n / 1000:.1f}k" if n >= 1000 else str(n)
+    """Right-aligned, comma-grouped star count, e.g. 83,781."""
+    return f"{n:,}"
 
 
 def render(methods: list[dict]) -> str:
@@ -117,23 +110,28 @@ def render(methods: list[dict]) -> str:
     cats = [c for c in CATEGORY_ORDER if c in by_cat]
     cats += sorted(c for c in by_cat if c not in CATEGORY_ORDER)
 
-    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    out = [f"_{len(methods)} methods tracked · auto-updated {now}_"]
+    today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+    out = [
+        f"{len(methods)} projects, ranked by GitHub stars within each category. "
+        f"Star counts and last-commit dates are pulled from the GitHub API "
+        f"(last refreshed {today})."
+    ]
 
     for cat in cats:
         rows = sorted(by_cat[cat], key=lambda m: m.get("stars", 0), reverse=True)
         out.append(f"\n### {cat}\n")
-        out.append("| Project | ⭐ Stars | Activity | License | Languages | What it is |")
-        out.append("| --- | ---: | --- | --- | --- | --- |")
+        out.append("| Project | Stars | Last commit | License | Languages | Description |")
+        out.append("| :--- | ---: | :---: | :--- | :--- | :--- |")
         for m in rows:
             link = m.get("homepage") or f"https://github.com/{m['repo']}"
-            name = f"**[{m['name']}]({link})**"
-            paper = f" · [📄]({m['paper']})" if m.get("paper") else ""
+            name = f"[{m['name']}]({link})"
+            desc = str(m.get("description", "")).strip()
+            if m.get("paper"):
+                desc = f"{desc} ([paper]({m['paper']}))"
             stars = f"[{fmt_stars(m.get('stars', 0))}](https://github.com/{m['repo']}/stargazers)"
             out.append(
-                f"| {name}{paper} | {stars} | {activity_badge(m.get('pushed_at', ''))} "
-                f"| {m.get('license', '—')} | {m.get('languages', '—')} "
-                f"| {str(m.get('description', '')).strip()} |"
+                f"| {name} | {stars} | {last_commit(m.get('pushed_at', ''))} "
+                f"| {m.get('license', '—')} | {m.get('languages', '—')} | {desc} |"
             )
     return "\n".join(out) + "\n"
 

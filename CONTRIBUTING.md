@@ -22,13 +22,13 @@ themselves from live GitHub data.
 
 ```yaml
 - name: Your OCR Name
-  repo: owner/repository          # GitHub "owner/name" — drives stars & activity
-  category: "🏗️ Engines & Toolkits"  # must match one of the categories below
-  description: One line on what it does and why it's worth knowing
+  repo: owner/repository          # GitHub "owner/name"; drives stars and last commit
+  category: "Engines & toolkits"  # must match one of the categories below
+  description: One factual sentence on what it does
   languages: "100+"               # optional: e.g. "English", "80+", "Multi"
   homepage: https://example.com   # optional: docs/site (defaults to the repo)
-  paper: https://arxiv.org/abs/…  # optional: shown as a 📄 icon
-  # license is auto-filled from GitHub — only set it to override
+  paper: https://arxiv.org/abs/…  # optional: rendered as a "(paper)" link
+  # license is auto-filled from GitHub; only set it to override
 ```
 
 ### Field rules
@@ -36,7 +36,7 @@ themselves from live GitHub data.
 | Field         | Required | Notes |
 | ------------- | :------: | ----- |
 | `name`        | ✅ | Display name. |
-| `repo`        | ✅ | `owner/name` on GitHub. Must be a **real, public** repo — stars and activity are fetched from it. |
+| `repo`        | ✅ | `owner/name` on GitHub. Must be a **real, public** repo; stars and last-commit date are fetched from it. |
 | `category`    | ✅ | One of the categories below (or propose a new one — see [Adding a category](#adding-a-category)). |
 | `description` | ✅ | One line, ~120 chars max, factual, no marketing fluff. |
 | `languages`   | ⬜ | Languages supported, e.g. `"100+"`. |
@@ -46,13 +46,14 @@ themselves from live GitHub data.
 
 ## Categories
 
-Methods are grouped by **what they do**, not by who made them:
+Methods are grouped by what they do, not by who made them. Use one of these
+exact category strings:
 
-- **🏗️ Engines & Toolkits** — general-purpose OCR engines/SDKs (detection + recognition).
-- **📄 Document & Layout Parsers** — turn whole PDFs/docs into structured text, tables, Markdown.
-- **🧠 VLM / LLM-based OCR** — vision-language models that read documents end-to-end.
-- **🔢 Math & Formula** — specialised at equations, tables and scientific notation.
-- **🧩 Wrappers & Pipelines** — tools built on top of an engine (APIs, glue, post-processing).
+- **Engines & toolkits**: general-purpose OCR engines and SDKs (detection plus recognition).
+- **Document & layout parsers**: turn whole PDFs or documents into structured text, tables, and Markdown.
+- **Vision-language OCR**: vision-language models that read documents end-to-end.
+- **Math & formula**: specialised at equations, tables, and scientific notation.
+- **Wrappers & pipelines**: tools built on top of an engine (APIs, glue, post-processing).
 
 ### Adding a category
 
