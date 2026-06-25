@@ -24,7 +24,7 @@ YAML block and a pull request.
 
 <!-- METHODS:START -->
 
-_15 methods tracked · auto-updated 2026-06-25 12:55 UTC_
+_16 methods tracked · auto-updated 2026-06-25 13:02 UTC_
 
 ### 🏗️ Engines & Toolkits
 
@@ -54,6 +54,7 @@ _15 methods tracked · auto-updated 2026-06-25 12:55 UTC_
 | **[dots.ocr](https://github.com/rednote-hilab/dots.ocr)** | [9.0k](https://github.com/rednote-hilab/dots.ocr/stargazers) | 🟡 92d | MIT | Multi | Multilingual document layout parsing (text, tables, formulas, reading order) in a single vision-language model |
 | **[GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)** · [📄](https://arxiv.org/abs/2409.01704) | [8.1k](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 🔴 500d | — | Multi | Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts |
 | **[Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)** | [7.3k](https://github.com/baidu/Unlimited-OCR/stargazers) | 🟢 1d | MIT | Multi | Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass |
+| **[GLM-OCR](https://github.com/zai-org/GLM-OCR)** | [7.0k](https://github.com/zai-org/GLM-OCR/stargazers) | 🟢 65d | Apache-2.0 | Multi | Zhipu AI's GLM vision-language OCR model for document parsing — text, tables and formulas |
 
 ### 🔢 Math & Formula
 
