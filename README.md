@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/ocr-sota-hero.png" alt="OCR-SOTA hero image" width="680" />
+</p>
+
 # OCR-SOTA
 
 > A living, auto-ranked list of the OCR engines, document parsers and VLM-based
@@ -20,7 +24,7 @@ YAML block and a pull request.
 
 <!-- METHODS:START -->
 
-_13 methods tracked · auto-updated 2026-06-25 12:04 UTC_
+_14 methods tracked · auto-updated 2026-06-25 12:40 UTC_
 
 ### 🏗️ Engines & Toolkits
 
@@ -28,7 +32,7 @@ _13 methods tracked · auto-updated 2026-06-25 12:04 UTC_
 | --- | ---: | --- | --- | --- | --- |
 | **[PaddleOCR](https://paddlepaddle.github.io/PaddleOCR/)** | [83.8k](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | 🟢 0d | Apache-2.0 | 100+ | Lightweight multilingual toolkit; strong CJK, tables and layout; the most-starred OCR repo |
 | **[Tesseract](https://tesseract-ocr.github.io/)** | [74.9k](https://github.com/tesseract-ocr/tesseract/stargazers) | 🟢 2d | Apache-2.0 | 100+ | The classic LSTM engine — battle-tested, runs offline in ~10MB, ideal for edge and embedded |
-| **[EasyOCR](https://github.com/JaidedAI/EasyOCR)** | [29.7k](https://github.com/JaidedAI/EasyOCR/stargazers) | 🟡 201d | Apache-2.0 | 80+ | Ready-to-use PyTorch OCR with a one-line API and 80+ languages out of the box |
+| **[EasyOCR](https://github.com/JaidedAI/EasyOCR)** | [29.7k](https://github.com/JaidedAI/EasyOCR/stargazers) | 🟡 202d | Apache-2.0 | 80+ | Ready-to-use PyTorch OCR with a one-line API and 80+ languages out of the box |
 | **[docTR](https://github.com/mindee/doctr)** | [6.2k](https://github.com/mindee/doctr/stargazers) | 🟢 0d | Apache-2.0 | English, French, + | End-to-end document text detection + recognition on TensorFlow/PyTorch by Mindee |
 | **[MMOCR](https://github.com/open-mmlab/mmocr)** | [4.7k](https://github.com/open-mmlab/mmocr/stargazers) | 🔴 575d | Apache-2.0 | Multi | OpenMMLab research toolbox — detection, recognition and KIE with many SOTA model implementations |
 
@@ -47,7 +51,8 @@ _13 methods tracked · auto-updated 2026-06-25 12:04 UTC_
 | --- | ---: | --- | --- | --- | --- |
 | **[TrOCR (unilm)](https://github.com/microsoft/unilm/tree/master/trocr)** · [📄](https://arxiv.org/abs/2109.10282) | [22.2k](https://github.com/microsoft/unilm/stargazers) | 🟡 153d | MIT | English, + | Microsoft transformer-based OCR (lives in the unilm repo); strong printed + handwritten recognition |
 | **[olmOCR](https://olmocr.allenai.org/)** | [17.4k](https://github.com/allenai/olmocr/stargazers) | 🟡 91d | Apache-2.0 | Multi | AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model |
-| **[GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)** · [📄](https://arxiv.org/abs/2409.01704) | [8.1k](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 🔴 499d | — | Multi | Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts |
+| **[GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)** · [📄](https://arxiv.org/abs/2409.01704) | [8.1k](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 🔴 500d | — | Multi | Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts |
+| **[Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)** | [7.3k](https://github.com/baidu/Unlimited-OCR/stargazers) | 🟢 0d | MIT | Multi | Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass |
 
 ### 🔢 Math & Formula
 
@@ -75,5 +80,5 @@ python scripts/update_readme.py            # add GITHUB_TOKEN=... for higher rat
 
 ## License
 
-Metadata in this repo is released under [CC0-1.0](LICENSE) (public domain). Each
-listed project keeps its own license — shown in the tables above.
+This list and its tooling are released under the [MIT License](LICENSE) — fully
+open source. Each listed project keeps its own license, shown in the tables above.

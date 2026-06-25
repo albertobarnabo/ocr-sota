@@ -101,6 +101,12 @@
   homepage: https://github.com/microsoft/unilm/tree/master/trocr
   description: Microsoft transformer-based OCR (lives in the unilm repo); strong printed + handwritten recognition
 
+- name: Unlimited-OCR
+  repo: baidu/Unlimited-OCR
+  category: "🧠 VLM / LLM-based OCR"
+  languages: "Multi"
+  description: Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass
+
 # ── Math & Formula ────────────────────────────────────────────────────────
 - name: Pix2Text
   repo: breezedeus/Pix2Text
