@@ -20,7 +20,7 @@ YAML block and a pull request.
 
 <!-- METHODS:START -->
 
-_13 methods tracked · auto-updated 2026-06-25 12:04 UTC_
+_13 methods tracked · auto-updated 2026-06-25 12:08 UTC_
 
 ### 🏗️ Engines & Toolkits
 
