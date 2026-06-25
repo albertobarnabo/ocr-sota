@@ -24,7 +24,7 @@ YAML block and a pull request.
 
 <!-- METHODS:START -->
 
-_14 methods tracked · auto-updated 2026-06-25 12:40 UTC_
+_15 methods tracked · auto-updated 2026-06-25 12:52 UTC_
 
 ### 🏗️ Engines & Toolkits
 
@@ -51,8 +51,9 @@ _14 methods tracked · auto-updated 2026-06-25 12:40 UTC_
 | --- | ---: | --- | --- | --- | --- |
 | **[TrOCR (unilm)](https://github.com/microsoft/unilm/tree/master/trocr)** · [📄](https://arxiv.org/abs/2109.10282) | [22.2k](https://github.com/microsoft/unilm/stargazers) | 🟡 153d | MIT | English, + | Microsoft transformer-based OCR (lives in the unilm repo); strong printed + handwritten recognition |
 | **[olmOCR](https://olmocr.allenai.org/)** | [17.4k](https://github.com/allenai/olmocr/stargazers) | 🟡 91d | Apache-2.0 | Multi | AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model |
+| **[dots.ocr](https://github.com/rednote-hilab/dots.ocr)** | [9.0k](https://github.com/rednote-hilab/dots.ocr/stargazers) | 🟡 92d | MIT | Multi | Multilingual document layout parsing (text, tables, formulas, reading order) in a single vision-language model |
 | **[GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0)** · [📄](https://arxiv.org/abs/2409.01704) | [8.1k](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 🔴 500d | — | Multi | Unified end-to-end model that OCRs text, tables, formulas, sheet music and charts |
-| **[Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)** | [7.3k](https://github.com/baidu/Unlimited-OCR/stargazers) | 🟢 0d | MIT | Multi | Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass |
+| **[Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)** | [7.3k](https://github.com/baidu/Unlimited-OCR/stargazers) | 🟢 1d | MIT | Multi | Baidu's one-shot model for long-horizon parsing — reads very long documents end-to-end in a single pass |
 
 ### 🔢 Math & Formula
 

@@ -153,6 +153,19 @@ def main() -> int:
         flag = "" if m.get("ok") else "  (fetch failed)"
         print(f"  ✓ {m['name']:18} ⭐ {m.get('stars', 0)}{flag}")
 
+    # Refuse to write a degraded README: a partial fetch (e.g. GitHub rate limit)
+    # would zero out stars/license for the failed rows and clobber good data.
+    failed = [m["name"] for m in methods if not m.get("ok")]
+    if failed:
+        print(
+            f"\nAborting: {len(failed)} repo(s) failed to fetch "
+            f"({', '.join(failed)}).\n"
+            "README left unchanged. Likely the GitHub rate limit — re-run with a "
+            "token:\n    GITHUB_TOKEN=$(gh auth token) python scripts/update_readme.py",
+            file=sys.stderr,
+        )
+        return 1
+
     table = render(methods)
     readme = README.read_text()
     if START not in readme or END not in readme:
