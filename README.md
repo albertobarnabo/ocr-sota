@@ -54,7 +54,7 @@ one entry in the YAML file and a pull request.
 | [olmOCR](https://olmocr.allenai.org/) | [17,408](https://github.com/allenai/olmocr/stargazers) | 2026-03-25 | Apache-2.0 | Multi | AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model. |
 | [dots.ocr](https://github.com/rednote-hilab/dots.ocr) | [8,959](https://github.com/rednote-hilab/dots.ocr/stargazers) | 2026-03-24 | MIT | Multi | Multilingual document layout parsing (text, tables, formulas, reading order) in one vision-language model. |
 | [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) | [8,145](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 2025-02-10 | — | Multi | Unified end-to-end model that reads text, tables, formulas, sheet music, and charts. ([paper](https://arxiv.org/abs/2409.01704)) |
-| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | [7,417](https://github.com/baidu/Unlimited-OCR/stargazers) | 2026-06-24 | MIT | Multi | Baidu model for long-horizon parsing that reads very long documents in a single pass. |
+| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | [7,425](https://github.com/baidu/Unlimited-OCR/stargazers) | 2026-06-24 | MIT | Multi | Baidu model for long-horizon parsing that reads very long documents in a single pass. |
 | [GLM-OCR](https://github.com/zai-org/GLM-OCR) | [7,049](https://github.com/zai-org/GLM-OCR/stargazers) | 2026-04-21 | Apache-2.0 | Multi | Zhipu AI's GLM vision-language model for document parsing, including text, tables, and formulas. |
 
 ### Math & formula
@@ -67,7 +67,7 @@ one entry in the YAML file and a pull request.
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [MarkItDown](https://github.com/microsoft/markitdown) | [159,006](https://github.com/microsoft/markitdown/stargazers) | 2026-06-24 | MIT | Multi | Microsoft tool that converts Office documents, PDFs, and images to LLM-ready Markdown, with OCR for images. |
+| [MarkItDown](https://github.com/microsoft/markitdown) | [159,007](https://github.com/microsoft/markitdown/stargazers) | 2026-06-24 | MIT | Multi | Microsoft tool that converts Office documents, PDFs, and images to LLM-ready Markdown, with OCR for images. |
 
 <!-- METHODS:END -->
 
