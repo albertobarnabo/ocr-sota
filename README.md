@@ -24,7 +24,7 @@ YAML block and a pull request.
 
 <!-- METHODS:START -->
 
-_16 methods tracked · auto-updated 2026-06-25 13:02 UTC_
+_18 methods tracked · auto-updated 2026-06-25 13:12 UTC_
 
 ### 🏗️ Engines & Toolkits
 
@@ -40,6 +40,7 @@ _16 methods tracked · auto-updated 2026-06-25 13:02 UTC_
 
 | Project | ⭐ Stars | Activity | License | Languages | What it is |
 | --- | ---: | --- | --- | --- | --- |
+| **[Docling](https://github.com/docling-project/docling)** | [62.1k](https://github.com/docling-project/docling/stargazers) | 🟢 0d | MIT | Multi | Parses PDFs, Office and HTML into structured Markdown/JSON with layout, tables and OCR for gen-AI pipelines |
 | **[Marker](https://github.com/datalab-to/marker)** | [36.4k](https://github.com/datalab-to/marker/stargazers) | 🟢 2d | GPL-3.0 | Multi | Converts PDFs, docs and slides to clean Markdown/JSON with tables, equations and code blocks |
 | **[OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)** | [34.0k](https://github.com/ocrmypdf/OCRmyPDF/stargazers) | 🟢 2d | MPL-2.0 | 100+ | Adds a searchable text layer to scanned PDFs (Tesseract under the hood) without touching the image |
 | **[Surya](https://github.com/datalab-to/surya)** | [20.9k](https://github.com/datalab-to/surya/stargazers) | 🟢 12d | Apache-2.0 | 90+ | Document OCR, layout analysis, reading-order and table recognition across 90+ languages |
@@ -61,6 +62,12 @@ _16 methods tracked · auto-updated 2026-06-25 13:02 UTC_
 | Project | ⭐ Stars | Activity | License | Languages | What it is |
 | --- | ---: | --- | --- | --- | --- |
 | **[Pix2Text](https://github.com/breezedeus/Pix2Text)** | [3.2k](https://github.com/breezedeus/Pix2Text/stargazers) | 🟡 138d | MIT | 80+ | Free Mathpix alternative — recognizes math formulas, tables and mixed text into LaTeX/Markdown |
+
+### 🧩 Wrappers & Pipelines
+
+| Project | ⭐ Stars | Activity | License | Languages | What it is |
+| --- | ---: | --- | --- | --- | --- |
+| **[MarkItDown](https://github.com/microsoft/markitdown)** | [159.0k](https://github.com/microsoft/markitdown/stargazers) | 🟢 0d | MIT | Multi | Microsoft tool that converts Office docs, PDFs and images to LLM-ready Markdown (OCR for images) |
 
 <!-- METHODS:END -->
 
