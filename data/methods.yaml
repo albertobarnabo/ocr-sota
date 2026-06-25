@@ -113,6 +113,12 @@
   languages: "Multi"
   description: Multilingual document layout parsing (text, tables, formulas, reading order) in a single vision-language model
 
+- name: GLM-OCR
+  repo: zai-org/GLM-OCR
+  category: "🧠 VLM / LLM-based OCR"
+  languages: "Multi"
+  description: Zhipu AI's GLM vision-language OCR model for document parsing — text, tables and formulas
+
 # ── Math & Formula ────────────────────────────────────────────────────────
 - name: Pix2Text
   repo: breezedeus/Pix2Text
