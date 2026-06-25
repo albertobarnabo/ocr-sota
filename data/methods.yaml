@@ -71,6 +71,12 @@
   languages: "100+"
   description: Adds a searchable text layer to scanned PDFs (Tesseract under the hood) without touching the image
 
+- name: Docling
+  repo: docling-project/docling
+  category: "📄 Document & Layout Parsers"
+  languages: "Multi"
+  description: Parses PDFs, Office and HTML into structured Markdown/JSON with layout, tables and OCR for gen-AI pipelines
+
 - name: Donut
   repo: clovaai/donut
   category: "📄 Document & Layout Parsers"
@@ -125,3 +131,10 @@
   category: "🔢 Math & Formula"
   languages: "80+"
   description: Free Mathpix alternative — recognizes math formulas, tables and mixed text into LaTeX/Markdown
+
+# ── Wrappers & Pipelines ──────────────────────────────────────────────────
+- name: MarkItDown
+  repo: microsoft/markitdown
+  category: "🧩 Wrappers & Pipelines"
+  languages: "Multi"
+  description: Microsoft tool that converts Office docs, PDFs and images to LLM-ready Markdown (OCR for images)
