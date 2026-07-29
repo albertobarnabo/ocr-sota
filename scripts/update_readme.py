@@ -119,9 +119,15 @@ def render(methods: list[dict]) -> str:
 
     for cat in cats:
         rows = sorted(by_cat[cat], key=lambda m: m.get("stars", 0), reverse=True)
+        # The Compute column (hardware verdict from benchmark/) only renders in
+        # categories where at least one entry carries the field, so untouched
+        # categories keep their existing layout.
+        has_compute = any(m.get("compute") for m in rows)
         out.append(f"\n### {cat}\n")
-        out.append("| Project | Stars | Last commit | License | Languages | Description |")
-        out.append("| :--- | ---: | :---: | :--- | :--- | :--- |")
+        compute_head = " Compute |" if has_compute else ""
+        compute_rule = " :--- |" if has_compute else ""
+        out.append(f"| Project | Stars | Last commit | License | Languages |{compute_head} Description |")
+        out.append(f"| :--- | ---: | :---: | :--- | :--- |{compute_rule} :--- |")
         for m in rows:
             link = m.get("homepage") or f"https://github.com/{m['repo']}"
             name = f"[{m['name']}]({link})"
@@ -129,9 +135,10 @@ def render(methods: list[dict]) -> str:
             if m.get("paper"):
                 desc = f"{desc} ([paper]({m['paper']}))"
             stars = f"[{fmt_stars(m.get('stars', 0))}](https://github.com/{m['repo']}/stargazers)"
+            compute_cell = f" {m.get('compute') or '—'} |" if has_compute else ""
             out.append(
                 f"| {name} | {stars} | {last_commit(m.get('pushed_at', ''))} "
-                f"| {m.get('license', '—')} | {m.get('languages', '—')} | {desc} |"
+                f"| {m.get('license', '—')} | {m.get('languages', '—')} |{compute_cell} {desc} |"
             )
     return "\n".join(out) + "\n"
 

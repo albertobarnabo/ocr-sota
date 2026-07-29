@@ -3,3 +3,8 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+
+# benchmark run artifacts (results/ stays tracked)
+benchmark/preds/
+benchmark/logs/
+data/*.parquet

@@ -1,0 +1,29 @@
+{
+  "model": "_dev_identity",
+  "track": "photo",
+  "device": "cpu",
+  "normalization_version": "v1",
+  "n_rows": 20,
+  "n_empty_preds": 20,
+  "cer": 1.0,
+  "cer_newline_kept": 1.0,
+  "wer": 1.0,
+  "word_f1": 0.0,
+  "word_precision": 0.0,
+  "word_recall": 0.0,
+  "per_locale_cer": {
+    "DE": 1.0,
+    "FR": 1.0,
+    "IT": 1.0,
+    "UK": 1.0,
+    "US": 1.0
+  },
+  "per_locale_n": {
+    "DE": 3,
+    "FR": 4,
+    "IT": 4,
+    "UK": 3,
+    "US": 6
+  },
+  "mean_sec_per_image": 0.0
+}

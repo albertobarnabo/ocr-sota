@@ -1,0 +1,21 @@
+# Methods tracked in data/methods.yaml that are deliberately not benchmarked.
+# benchmark/render_results.py renders this into the "Not benchmarked" table.
+#
+# Schema (per list item):
+#   name    (required)  Display name, matching data/methods.yaml.
+#   reason  (required)  One factual sentence on why it is excluded.
+
+- name: OCRmyPDF
+  reason: Wrapper around Tesseract — the numbers would measure Tesseract, not the wrapper.
+
+- name: Marker
+  reason: Pipeline built on Surya — the numbers would measure Surya, not the wrapper.
+
+- name: Docling
+  reason: Pluggable OCR backends — the numbers would measure whichever engine is configured, not Docling itself.
+
+- name: MarkItDown
+  reason: Delegates image OCR to an external LLM — the numbers would measure that LLM, not the tool.
+
+- name: Donut
+  reason: Emits structured JSON fields, not a transcription, so text metrics do not apply; a candidate for a future key-information-extraction track.

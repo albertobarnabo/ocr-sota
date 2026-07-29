@@ -71,6 +71,46 @@ one entry in the YAML file and a pull request.
 
 <!-- METHODS:END -->
 
+<!-- BENCHMARK:START -->
+
+## Receipt OCR benchmark
+
+How do the models above actually compare? We ran the ones that can transcribe a
+receipt end-to-end over the same 500 held-out receipts (ids
+`eval-000000`–`eval-000499`) from
+[synthetic-receipts-ocr](https://huggingface.co/datasets/albertobarnabo/synthetic-receipts-ocr) — synthetic
+thermal-printer receipts in five locales (US/UK/DE/IT/FR) whose fonts,
+vocabulary, and merchants never appear in the training split. Each model runs
+twice: on the **photo** track (perspective photo with degradations — the
+headline number) and on the **clean** track (flat render — the robustness
+delta). The primary metric is character error rate on the photo track, lower is
+better; word error rate and an order-independent word-F1 are also computed, and
+per-locale CER is recorded in the result files. Predictions and ground truth
+are normalized identically before scoring (Unicode NFC, uppercase, lines
+stripped, whitespace runs collapsed, empty lines dropped), and the primary CER
+treats newlines as spaces so models are not penalized for line-break placement.
+Timings come from a single rented RTX 4090 box: GPU seconds per image over all
+500, a CPU probe over the first 10, and peak VRAM polled from `nvidia-smi`.
+Verdicts follow fixed thresholds: **CPU-friendly** under 2 s/receipt on CPU,
+**GPU recommended** when CPU works but takes 2 s or more, **GPU required** when
+a model cannot run on CPU or exceeds 60 s/receipt there.
+
+Measurements are pending — the results table will appear here after the first run.
+
+### Not benchmarked
+
+| Model | Why not benchmarked |
+| :--- | :--- |
+| OCRmyPDF | Wrapper around Tesseract — the numbers would measure Tesseract, not the wrapper. |
+| Marker | Pipeline built on Surya — the numbers would measure Surya, not the wrapper. |
+| Docling | Pluggable OCR backends — the numbers would measure whichever engine is configured, not Docling itself. |
+| MarkItDown | Delegates image OCR to an external LLM — the numbers would measure that LLM, not the tool. |
+| Donut | Emits structured JSON fields, not a transcription, so text metrics do not apply; a candidate for a future key-information-extraction track. |
+
+Full protocol, adapter contract, and reproduction steps: [benchmark/README.md](benchmark/README.md).
+
+<!-- BENCHMARK:END -->
+
 ## How it works
 
 ```

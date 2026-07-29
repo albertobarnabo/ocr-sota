@@ -15,6 +15,11 @@
 #   homepage     (optional)  Docs or project site; defaults to the GitHub repo.
 #   paper        (optional)  arXiv or paper link; rendered as a "(paper)" link.
 #   license      (optional)  Auto-filled from GitHub if omitted.
+#   compute      (optional)  Hardware verdict from our receipt benchmark
+#                            (see benchmark/README.md). One of:
+#                            "CPU-friendly" | "GPU recommended" | "GPU required"
+#                            | "untested". Set from measurements only — do not
+#                            guess. Omit for methods we have not benchmarked.
 #
 # Keep the list roughly alphabetical within each section; sorting is automatic.
 # ---------------------------------------------------------------------------
