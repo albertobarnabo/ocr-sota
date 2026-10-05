@@ -24,50 +24,50 @@ one entry in the YAML file and a pull request.
 
 <!-- METHODS:START -->
 
-18 projects, ranked by GitHub stars within each category. Star counts and last-commit dates are pulled from the GitHub API (last refreshed 2026-09-28).
+18 projects, ranked by GitHub stars within each category. Star counts and last-commit dates are pulled from the GitHub API (last refreshed 2026-10-05).
 
 ### Engines & toolkits
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [PaddleOCR](https://paddlepaddle.github.io/PaddleOCR/) | [90,329](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | 2026-09-16 | Apache-2.0 | 100+ | Lightweight multilingual OCR toolkit with strong CJK, table, and layout support. |
-| [Tesseract](https://tesseract-ocr.github.io/) | [76,722](https://github.com/tesseract-ocr/tesseract/stargazers) | 2026-09-28 | Apache-2.0 | 100+ | Classic LSTM-based engine that runs fully offline in about 10 MB; well suited to edge use. |
-| [EasyOCR](https://github.com/JaidedAI/EasyOCR) | [30,037](https://github.com/JaidedAI/EasyOCR/stargazers) | 2025-12-05 | Apache-2.0 | 80+ | Ready-to-use PyTorch OCR with a simple API and 80+ languages out of the box. |
-| [docTR](https://github.com/mindee/doctr) | [6,366](https://github.com/mindee/doctr/stargazers) | 2026-09-24 | Apache-2.0 | Multi | End-to-end text detection and recognition for documents, on TensorFlow and PyTorch. By Mindee. |
-| [MMOCR](https://github.com/open-mmlab/mmocr) | [4,753](https://github.com/open-mmlab/mmocr/stargazers) | 2024-11-27 | Apache-2.0 | Multi | OpenMMLab research toolbox for text detection, recognition, and key information extraction. |
+| [PaddleOCR](https://paddlepaddle.github.io/PaddleOCR/) | [90,626](https://github.com/PaddlePaddle/PaddleOCR/stargazers) | 2026-09-16 | Apache-2.0 | 100+ | Lightweight multilingual OCR toolkit with strong CJK, table, and layout support. |
+| [Tesseract](https://tesseract-ocr.github.io/) | [76,825](https://github.com/tesseract-ocr/tesseract/stargazers) | 2026-09-28 | Apache-2.0 | 100+ | Classic LSTM-based engine that runs fully offline in about 10 MB; well suited to edge use. |
+| [EasyOCR](https://github.com/JaidedAI/EasyOCR) | [30,044](https://github.com/JaidedAI/EasyOCR/stargazers) | 2025-12-05 | Apache-2.0 | 80+ | Ready-to-use PyTorch OCR with a simple API and 80+ languages out of the box. |
+| [docTR](https://github.com/mindee/doctr) | [6,377](https://github.com/mindee/doctr/stargazers) | 2026-10-05 | Apache-2.0 | Multi | End-to-end text detection and recognition for documents, on TensorFlow and PyTorch. By Mindee. |
+| [MMOCR](https://github.com/open-mmlab/mmocr) | [4,751](https://github.com/open-mmlab/mmocr/stargazers) | 2024-11-27 | Apache-2.0 | Multi | OpenMMLab research toolbox for text detection, recognition, and key information extraction. |
 
 ### Document & layout parsers
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [Docling](https://github.com/docling-project/docling) | [68,115](https://github.com/docling-project/docling/stargazers) | 2026-09-28 | MIT | Multi | Parses PDFs, Office, and HTML into structured Markdown or JSON with layout, table, and OCR support. |
-| [Marker](https://github.com/datalab-to/marker) | [40,038](https://github.com/datalab-to/marker/stargazers) | 2026-09-13 | Apache-2.0 | Multi | Converts PDFs, documents, and slides to clean Markdown or JSON, including tables and equations. |
-| [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | [34,890](https://github.com/ocrmypdf/OCRmyPDF/stargazers) | 2026-09-28 | MPL-2.0 | 100+ | Adds a searchable text layer to scanned PDFs using Tesseract, leaving the original image intact. |
-| [Surya](https://github.com/datalab-to/surya) | [21,424](https://github.com/datalab-to/surya/stargazers) | 2026-09-11 | Apache-2.0 | 90+ | Document OCR with layout analysis, reading-order detection, and table recognition in 90+ languages. |
-| [Donut](https://github.com/clovaai/donut) | [6,927](https://github.com/clovaai/donut/stargazers) | 2024-07-11 | MIT | Multi | OCR-free document understanding transformer that reads documents end-to-end with no text detector. ([paper](https://arxiv.org/abs/2111.15664)) |
+| [Docling](https://github.com/docling-project/docling) | [68,402](https://github.com/docling-project/docling/stargazers) | 2026-10-05 | MIT | Multi | Parses PDFs, Office, and HTML into structured Markdown or JSON with layout, table, and OCR support. |
+| [Marker](https://github.com/datalab-to/marker) | [40,209](https://github.com/datalab-to/marker/stargazers) | 2026-10-02 | Apache-2.0 | Multi | Converts PDFs, documents, and slides to clean Markdown or JSON, including tables and equations. |
+| [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) | [34,936](https://github.com/ocrmypdf/OCRmyPDF/stargazers) | 2026-09-29 | MPL-2.0 | 100+ | Adds a searchable text layer to scanned PDFs using Tesseract, leaving the original image intact. |
+| [Surya](https://github.com/datalab-to/surya) | [21,449](https://github.com/datalab-to/surya/stargazers) | 2026-09-11 | Apache-2.0 | 90+ | Document OCR with layout analysis, reading-order detection, and table recognition in 90+ languages. |
+| [Donut](https://github.com/clovaai/donut) | [6,929](https://github.com/clovaai/donut/stargazers) | 2024-07-11 | MIT | Multi | OCR-free document understanding transformer that reads documents end-to-end with no text detector. ([paper](https://arxiv.org/abs/2111.15664)) |
 
 ### Vision-language OCR
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | [26,467](https://github.com/baidu/Unlimited-OCR/stargazers) | 2026-07-29 | MIT | Multi | Baidu model for long-horizon parsing that reads very long documents in a single pass. |
-| [TrOCR (unilm)](https://github.com/microsoft/unilm/tree/master/trocr) | [22,225](https://github.com/microsoft/unilm/stargazers) | 2026-09-21 | MIT | English | Microsoft transformer-based OCR, part of the unilm repo; strong on printed and handwritten text. ([paper](https://arxiv.org/abs/2109.10282)) |
-| [olmOCR](https://olmocr.allenai.org/) | [19,673](https://github.com/allenai/olmocr/stargazers) | 2026-03-25 | Apache-2.0 | Multi | AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model. |
-| [dots.ocr](https://github.com/rednote-hilab/dots.ocr) | [9,156](https://github.com/rednote-hilab/dots.ocr/stargazers) | 2026-03-24 | MIT | Multi | Multilingual document layout parsing (text, tables, formulas, reading order) in one vision-language model. |
-| [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) | [8,221](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 2025-02-10 | — | Multi | Unified end-to-end model that reads text, tables, formulas, sheet music, and charts. ([paper](https://arxiv.org/abs/2409.01704)) |
-| [GLM-OCR](https://github.com/zai-org/GLM-OCR) | [7,474](https://github.com/zai-org/GLM-OCR/stargazers) | 2026-04-21 | Apache-2.0 | Multi | Zhipu AI's GLM vision-language model for document parsing, including text, tables, and formulas. |
+| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | [26,671](https://github.com/baidu/Unlimited-OCR/stargazers) | 2026-07-29 | MIT | Multi | Baidu model for long-horizon parsing that reads very long documents in a single pass. |
+| [TrOCR (unilm)](https://github.com/microsoft/unilm/tree/master/trocr) | [22,227](https://github.com/microsoft/unilm/stargazers) | 2026-09-21 | MIT | English | Microsoft transformer-based OCR, part of the unilm repo; strong on printed and handwritten text. ([paper](https://arxiv.org/abs/2109.10282)) |
+| [olmOCR](https://olmocr.allenai.org/) | [19,692](https://github.com/allenai/olmocr/stargazers) | 2026-03-25 | Apache-2.0 | Multi | AllenAI toolkit that linearizes PDFs for LLM training using a fine-tuned vision-language model. |
+| [dots.ocr](https://github.com/rednote-hilab/dots.ocr) | [9,157](https://github.com/rednote-hilab/dots.ocr/stargazers) | 2026-03-24 | MIT | Multi | Multilingual document layout parsing (text, tables, formulas, reading order) in one vision-language model. |
+| [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) | [8,230](https://github.com/Ucas-HaoranWei/GOT-OCR2.0/stargazers) | 2025-02-10 | — | Multi | Unified end-to-end model that reads text, tables, formulas, sheet music, and charts. ([paper](https://arxiv.org/abs/2409.01704)) |
+| [GLM-OCR](https://github.com/zai-org/GLM-OCR) | [7,486](https://github.com/zai-org/GLM-OCR/stargazers) | 2026-04-21 | Apache-2.0 | Multi | Zhipu AI's GLM vision-language model for document parsing, including text, tables, and formulas. |
 
 ### Math & formula
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [Pix2Text](https://github.com/breezedeus/Pix2Text) | [3,255](https://github.com/breezedeus/Pix2Text/stargazers) | 2026-08-23 | MIT | 80+ | Open-source Mathpix alternative that recognizes math, tables, and mixed text into LaTeX or Markdown. |
+| [Pix2Text](https://github.com/breezedeus/Pix2Text) | [3,266](https://github.com/breezedeus/Pix2Text/stargazers) | 2026-08-23 | MIT | 80+ | Open-source Mathpix alternative that recognizes math, tables, and mixed text into LaTeX or Markdown. |
 
 ### Wrappers & pipelines
 
 | Project | Stars | Last commit | License | Languages | Description |
 | :--- | ---: | :---: | :--- | :--- | :--- |
-| [MarkItDown](https://github.com/microsoft/markitdown) | [187,400](https://github.com/microsoft/markitdown/stargazers) | 2026-09-21 | MIT | Multi | Microsoft tool that converts Office documents, PDFs, and images to LLM-ready Markdown, with OCR for images. |
+| [MarkItDown](https://github.com/microsoft/markitdown) | [188,553](https://github.com/microsoft/markitdown/stargazers) | 2026-10-04 | MIT | Multi | Microsoft tool that converts Office documents, PDFs, and images to LLM-ready Markdown, with OCR for images. |
 
 <!-- METHODS:END -->
 
